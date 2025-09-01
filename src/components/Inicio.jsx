@@ -1,32 +1,54 @@
-import Bannerpam from "../assets/BannerPam.png";
+import Banner from "../assets/BanneGym.jpg";
 import Typewriter from "./Typewriter";
 import { whatsAppLink } from "./WhatsApp/WhatsAppLink";
-
 const Inicio = () => {
   return (
-    <section id="inicio">
-      <div className="principal">
-        <div className="description text-center text-md-start py-5">
-          <h1 className="title-main">
-            Pamela Sousa Psicóloga Clínica CRP 17/7870
-          </h1>
-          <h2 className="subtitle">Psicoterapia Presencial e Online</h2>
-          <h2>
+    <section
+      id="inicio"
+      style={{
+        position: "relative", // limita o overlay só a essa seção
+        backgroundImage: `url(${Banner})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Overlay com opacidade só no fundo */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          zIndex: 1, // overlay no fundo
+        }}
+      ></div>
+
+      {/* Conteúdo acima do overlay */}
+      <div className="principal" style={{ position: "relative", zIndex: 2 }}>
+        <div className="description text-center text-md-start">
+          <h1 className="title-main">Qualidade de vida é aqui</h1>
+          <h2 className="subtitle">Conheça a melhor academia da cidade </h2>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              gap: "8px",
+            }}
+          >
+            <i className="bi bi-geo-alt-fill"></i>
             <Typewriter
-              text="para adultos, crianças e
-            adolescentes"
+              text="Recife - Pernambuco"
               speed={70}
               startOnView={true}
             />
-          </h2>
-          <p>
-            <i className="bi bi-geo-alt-fill"></i> Natal - Rio Grande do Norte
-          </p>
+          </div>
           <p className="text-content">
-            Venho oferecer um espaço de <strong>acolhimento e cuidado</strong>{" "}
-            para te ajudar no seu processo de transformação e busca de sentidos.
-            O primeiro passo para o cuidado e transformação de si está no
-            <strong> autoconhecimento</strong>.
+            Sua transformação começa aqui, conheça nossa unidade e metodologias
+            de treino feita especialmente para você!
           </p>
           <a
             href={whatsAppLink}
@@ -34,10 +56,9 @@ const Inicio = () => {
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
-            Agendar sessão
+            Conheça a BART GYM
           </a>
         </div>
-        <img src={Bannerpam} loading="eager" alt="imagem da psicóloga" />
       </div>
     </section>
   );

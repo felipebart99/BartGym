@@ -1,38 +1,38 @@
 import { useState } from "react";
 
-const Problemas = () => {
+const Beneficios = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const problemas = [
+  const beneficios = [
     {
-      titulo: "Ansiedade",
+      titulo: "Treinos Personalizados",
       descricao:
-        "Preocupações excessivas que não conseguia controlar, sensação constante de que algo ruim vai acontecer.",
+        "Planos de treino adaptados ao seu objetivo, seja ganho de massa, emagrecimento ou condicionamento físico.",
     },
     {
-      titulo: "Sobrecarga Emocional",
+      titulo: "Estrutura Moderna",
       descricao:
-        "Sensação de estar sempre no limite, sentimento de estar sobrecarregado com tarefas simples.",
+        "Ambiente amplo, climatizado e equipado com aparelhos de última geração para garantir o melhor desempenho.",
     },
     {
-      titulo: "Estresse constante",
+      titulo: "Acompanhamento Profissional",
       descricao:
-        "Pensamentos acelerados que não desaceleram, dificuldade de concentração e memória.",
+        "Equipe de instrutores qualificados sempre pronta para orientar e acompanhar sua evolução.",
     },
     {
-      titulo: "Oscilações de Humor",
+      titulo: "Aulas Dinâmicas",
       descricao:
-        "Reações desproporcionais a pequenos acontecimentos do dia a dia, Arrependimento frequente, irritabilidade.",
+        "Variedade de modalidades, como funcional, HIIT, dança e muito mais para deixar seu treino divertido.",
     },
     {
-      titulo: "Problemas de Sono",
+      titulo: "Bem-Estar e Saúde",
       descricao:
-        "Sonolência excessiva como escape emocional, pesadelos recorrentes ou sonhos perturbadores.",
+        "Espaços planejados para promover qualidade de vida, disposição e energia no seu dia a dia.",
     },
     {
-      titulo: "Crise Pessoal",
+      titulo: "Comunidade Ativa",
       descricao:
-        "Crise de identidade ou valores, busca por propósito e significado.",
+        "Um ambiente motivador, onde você encontra incentivo, amizades e muita energia positiva.",
     },
   ];
 
@@ -46,7 +46,7 @@ const Problemas = () => {
         <h2 className="text-center mb-5">É provável que você já sentiu...</h2>
 
         <div className="accordion">
-          {problemas.map((problema, index) => (
+          {beneficios.map((problema, index) => (
             <div
               key={index}
               className={`accordion-item ${
@@ -80,4 +80,4 @@ const Problemas = () => {
   );
 };
 
-export default Problemas;
+export default Beneficios;

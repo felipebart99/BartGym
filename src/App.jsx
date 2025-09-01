@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
 import Inicio from "./components/Inicio";
-import Problemas from "./components/Problemas";
+import Beneficios from "./components/Beneficios";
 import Gestalt from "./components/Gestalt";
 import FAQ from "./components/Faq";
 import WhatsAppButton from "./components/WhatsApp/WhatsAppButton";
@@ -17,7 +17,7 @@ function App() {
       <Inicio />
       <Psicoterapia />
       <Sobre />
-      <Problemas />
+      <Beneficios />
       <Gestalt />
       <Agendamento />
       <FAQ />

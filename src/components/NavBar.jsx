@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/logoPam.png"; // Ajuste o caminho conforme sua estrutura
+import Logo from "../assets/LogoBartGym.png";
 
 const NavBar = () => {
   // Função para rolagem suave
@@ -14,43 +14,27 @@ const NavBar = () => {
     <Navbar bg="light" expand="lg" className="py-3 navbar" sticky="top">
       <Container>
         <Navbar.Brand href="#inicio" onClick={() => handleScroll("inicio")}>
-          <img
-            src={logo}
-            className="d-inline-block align-top logo-img"
-            alt="Logo Psicóloga"
-          />
+          <img src={Logo} alt="Logo da academia" className="logo-img" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link href="#inicio" onClick={() => handleScroll("inicio")}>
-              Início
-            </Nav.Link>
-            <Nav.Link
-              href="#psicoterapia"
-              onClick={() => handleScroll("psicoterapia")}
-            >
-              A Psicoterapia
+            <Nav.Link href="#unidade" onClick={() => handleScroll("unidade")}>
+              Conheça a unidade
             </Nav.Link>
             <Nav.Link href="#sobre" onClick={() => handleScroll("sobre")}>
               Sobre Mim
             </Nav.Link>
-            <Nav.Link
-              href="#depoimentos"
-              onClick={() => handleScroll("depoimentos")}
-            >
-              Depoimentos
+            <Nav.Link href="#planos" onClick={() => handleScroll("planos")}>
+              Planos
             </Nav.Link>
             <Nav.Link
-              href="#agendamento"
-              onClick={() => handleScroll("agendamento")}
+              href="#formulario"
+              onClick={() => handleScroll("formulario")}
             >
-              Agendamento
-            </Nav.Link>
-            <Nav.Link href="#faq" onClick={() => handleScroll("faq")}>
-              FAQ
+              Fale conosco
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
