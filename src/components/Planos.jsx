@@ -1,15 +1,10 @@
 const Planos = () => {
   return (
-    <section class="container my-5" id="planos">
-      <div class="text-center mb-4">
-        <h2 class="fw-bold">Escolha seu plano</h2>
-        <p>Planos flexíveis para você treinar do seu jeito.</p>
-      </div>
-
+    <section id="planos">
       <div class="row g-4">
         <div class="col-12 col-md-4">
           <div class="card h-100 shadow-sm border-0">
-            <div class="card-body d-flex flex-column">
+            <div class="card-body d-flex flex-column ">
               <h5 class="card-title mb-1">Plano Mensal</h5>
               <p class="text-muted mb-3">Flexibilidade total, sem fidelidade</p>
               <div class="mb-3">

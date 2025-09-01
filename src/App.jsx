@@ -23,6 +23,7 @@ function App() {
       <Unidade />
       <Beneficios />
       <Sobre />
+      <Gestalt />
       <Contato />
       <Planos />
       <ImageCarousel />

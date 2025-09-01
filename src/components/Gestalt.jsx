@@ -1,35 +1,34 @@
+import icon1 from "../assets/icon-1.png";
+import icon2 from "../assets/icon-2.png";
+import icon3 from "../assets/icon-3.png";
+
 const Gestalt = () => {
   return (
     <section id="gestalt">
-      <div className="principal">
-        <h2>Quando considerar a Gestalt-Terapia?</h2>
-        <p>
-          A Gestalt-terapia pode ser uma aliada poderosa quando você sente que
-          algo não está bem, mas não sabe exatamente o quê. Ela é indicada para
-          quem deseja se reconectar com suas emoções, compreender seus
-          comportamentos e viver de forma mais autêntica.
-        </p>
-      </div>
+      <div className="principal"></div>
       <div className="cards">
         <div className="card">
-          <h3>Superar desafios</h3>
+          <img src={icon1} alt="" />
+          <h3>Quebre o sedentarismo</h3>
           <p>
-            Situações difíceis fazem parte da vida. A Gestalt-terapia ajuda você
-            a lidar com elas de forma mais consciente e equilibrada.
+            Vem fazer parte do nosso grupo de corrida e melhorar sua
+            performance.
           </p>
         </div>
         <div className="card">
-          <h3>Autoconhecimento e autenticidade</h3>
+          <img src={icon2} alt="" />
+          <h3>Programa de Hipertrofia</h3>
           <p>
-            Se conhecer melhor é o primeiro passo para viver com mais liberdade
-            emocional e fazer escolhas alinhadas com quem você realmente é.
+            Ganhe massa muscular e defina seu físico com o nosso programa de
+            hipertrofia.
           </p>
         </div>
         <div className="card">
-          <h3>Relacionamentos saudáveis</h3>
+          <img src={icon3} alt="" />
+          <h3>Foco no Emagrecimento</h3>
           <p>
-            Você aprende a se comunicar com mais clareza, identificar padrões e
-            estabelecer limites nos vínculos que constrói.
+            Temos um programa de emagrecimento eficiente, dinâmico e de
+            resultados.
           </p>
         </div>
       </div>
