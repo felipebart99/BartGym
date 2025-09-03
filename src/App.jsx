@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
 import Inicio from "./components/Inicio";
 import Beneficios from "./components/Beneficios";
-import Gestalt from "./components/Gestalt";
+import Propaganda from "./components/Propaganda";
 import WhatsAppButton from "./components/WhatsApp/WhatsAppButton";
 import Sobre from "./components/Sobre";
 import Planos from "./components/Planos";
@@ -21,7 +21,7 @@ function App() {
       <Unidade />
       <Beneficios />
       <Sobre />
-      <Gestalt />
+      <Propaganda />
       <Contato />
       <Planos />
       <ImageCarousel />

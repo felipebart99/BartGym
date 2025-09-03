@@ -2,9 +2,9 @@ import icon1 from "../assets/icon-1.png";
 import icon2 from "../assets/icon-2.png";
 import icon3 from "../assets/icon-3.png";
 
-const Gestalt = () => {
+const Propaganda = () => {
   return (
-    <section id="gestalt">
+    <section id="propaganda">
       <div className="principal"></div>
       <div className="cards">
         <div className="card">
@@ -35,4 +35,4 @@ const Gestalt = () => {
     </section>
   );
 };
-export default Gestalt;
+export default Propaganda;
